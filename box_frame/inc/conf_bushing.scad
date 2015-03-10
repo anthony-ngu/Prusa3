@@ -43,6 +43,7 @@ conf_b_lm12luu = [6, 10.6, 57, 0, "lm12luu bearing (12mm, double length)"];
 bearing_623 = [10, 4, 3, 1, "623 bearing"];
 bearing_624 = [13, 5, 4, 1, "624 bearing"];
 bearing_625 = [16, 5, 5, 1, "625 bearing"];
+bearing_623zz = [10.5, 4, 3, 1, "623 bearing double shield"];
 
 // two bearings side by side - for use without bearing guides.
 // Not recomended anymore

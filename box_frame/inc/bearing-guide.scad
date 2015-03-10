@@ -31,7 +31,7 @@ module bearing_guide_inner(){
     difference(){
         cylinder(r=idler_bearing[0] / 2 + single_wall_width * 3, h=height - (max( idler_bearing[1], belt_width) - idler_bearing[1]) / 2);
         translate([0, 0, -1])
-            cylinder(r=idler_bearing[0] / 2, h=height + 2);
+            cylinder(r=idler_bearing[0] / 2 + .2, h=height + 2);
     }
 
     difference(){
@@ -48,13 +48,13 @@ module bearing_guide_outer(){
     difference(){
         cylinder(r=idler_bearing[0] / 2 + 6 * single_wall_width + 0.2, h=height);
         translate([0,0,-1])
-            cylinder(r=idler_bearing[0] / 2 + single_wall_width * 3, h=height + 2);
+            cylinder(r=idler_bearing[0] / 2 + .2 + single_wall_width * 3, h=height + 2);
     }
 
     difference(){
         union(){
             cylinder(r=idler_assy_r_outer(idler_bearing), h=guiding_wall_thickness);
-            cylinder(r=idler_bearing[0] / 2, h=guiding_wall_thickness + (belt_width - idler_bearing[1])/2);
+            cylinder(r=idler_bearing[0] / 2 , h=guiding_wall_thickness + (belt_width - idler_bearing[1])/2);
         }
         translate([0,0,-1])
 cylinder(r=idler_bearing[0]/2-wall_descent, h=height + 5);
