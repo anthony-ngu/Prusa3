@@ -48,7 +48,7 @@ module bearing_guide_outer(){
     difference(){
         cylinder(r=idler_bearing[0] / 2 + 6 * single_wall_width + 0.2, h=height);
         translate([0,0,-1])
-            cylinder(r=idler_bearing[0] / 2 + .2 + single_wall_width * 3, h=height + 2);
+            cylinder(r=idler_bearing[0] / 2 + .4 + single_wall_width * 3, h=height + 2);
     }
 
     difference(){
