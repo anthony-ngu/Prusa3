@@ -24,7 +24,7 @@ geeksbase_mount=512;
 malcolm_extrusion_mount=1024;	//broken
 
 //default_extruder_mount=malcolm_extrusion_mount;
-default_extruder_mount=groovemount;
+default_extruder_mount=jhead_mount;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -172,7 +172,7 @@ hole_for_608=22.3;
 block_top_right=[wade_block_width,wade_block_height];
 
 layer_thickness=layer_height;
-filament_diameter=3;
+filament_diameter=1.75;
 filament_feed_hole_d=(filament_diameter*1.1)/cos(180/8);
 hobbing_depth=2;
 echo ("filament_feed_hole_d", filament_feed_hole_d);
@@ -608,7 +608,7 @@ module wadeidler()
 				translate([0,0,6.9/2])
 				cylinder(r1=12/2,r2=16/2,h=2);
 			}
-			cylinder(h=idler_short_side-6,r=m8_diameter/2-0.25/*Tight*/,
+			cylinder(h=20.3,r=m8_diameter/2-0.25/*Tight*/,
 				center=true,$fn=20);
 		}
 
